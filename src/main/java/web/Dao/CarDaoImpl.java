@@ -1,4 +1,4 @@
-package web.DAO;
+package web.Dao;
 
 import org.springframework.stereotype.Component;
 import web.model.Car;
@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class CarDAOImpl implements CarDAO{
+public class CarDaoImpl implements CarDao {
     private List<Car> garage = new ArrayList<>();
 
-    public CarDAOImpl(){
+    public CarDaoImpl(){
         garage.add(new Car("Audi", "A8", 2015));
         garage.add(new Car("BMW", "Z3", 2017));
         garage.add(new Car("Mazda", "CX-5", 2020));
